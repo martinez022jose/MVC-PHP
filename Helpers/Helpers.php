@@ -7,6 +7,18 @@
         return BASE_URL."Assets/";
     }
 
+    function headerAdmin($data=""){
+        $viewHeader = "Views/Template/headerAdmin.php";
+        require_once($viewHeader);
+
+    }
+
+    function footerAdmin($data=""){
+        $viewFooter = "Views/Template/footerAdmin.php";
+        require_once($viewFooter);
+
+    }
+
     function dep($data){
         $format = print_r('<pre>');
         $format .= print_r($data);
